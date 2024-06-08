@@ -1,7 +1,6 @@
 import { Kanit as GoogleKanit } from "next/font/google";
-import type { Metadata, Viewport } from "next";
+import type { Viewport } from "next";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
 
 const Kanit = GoogleKanit({
   weight: '500',
@@ -25,7 +24,6 @@ export default function RootLayout({
       <head />
       <body className={Kanit.className}>
         {children}
-        <Analytics />
       </body>
     </html>
   );
