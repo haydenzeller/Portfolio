@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black  to-transparent">
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-hidden bg-gradient-to-tl from-black  to-transparent">
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           <li>

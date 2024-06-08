@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <>
+    <div className="min-h-screen overflow-hidden">
         <Particles className="absolute inset-0 -z-1 bg-black" quantity={400} />
         <div className="relative pb-16 bg-transparent min-h-screen z-10">
         <Navigation />
@@ -92,6 +92,6 @@ export default function Projects() {
             </div>
         </div>
     </div>
-    </>
+    </div>
   );
 }

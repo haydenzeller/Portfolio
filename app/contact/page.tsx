@@ -48,13 +48,13 @@ export const metadata: Metadata = {
 
 export default function Contact() {
 	return (
-		<div className=" bg-gradient-to-tl from-transparent to-black">
-			<Navigation />
-			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+		<div className=" bg-gradient-to-tl from-transparent to-black min-h-screen overflow-hidden">
 			<Particles
 				className="absolute inset-0 -z-1 bg-black"
 				quantity={400}
 			/>
+			<Navigation />
+			<div className="flex items-center justify-center px-4 mx-auto">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
 					<Card>
 						<Link
