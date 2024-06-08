@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://haydenzeller.com/
+
+# Sitemaps
+Sitemap: https://haydenzeller.com/sitemap.xml

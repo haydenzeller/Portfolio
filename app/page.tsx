@@ -1,6 +1,36 @@
-import Image from "next/image";
 import Particles from "./components/Particles";
 import Link from "next/link";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  
+  title: "Hayden Zeller",
+  description: "Hayden Zeller - Student - Developer - Creator - Problem Solver",
+  keywords: ["Hayden Zeller", "Home", "Hayden Zeller Home", "Hayden Zeller Projects", "Hayden Zeller News", "Hayden Zeller Updates", "Hayden Zeller Blog", "Hayden Zeller Blog Posts", "Hayden Zeller Blog Updates", "Hayden Zeller Blog News", "Hayden Zeller Blog Projects", "Hayden Zeller Blog Posts Projects News Updates", "Hayden Zeller Blog Posts Projects News Updates Home"],
+  alternates: {
+    canonical: "https://haydenzeller.com",
+  },
+  twitter: {
+    card: "summary",
+    site: "@haydenzeller",
+  },
+  
+  openGraph: {
+    type: "website",
+    url: "https://haydenzeller.com",
+    title: "Hayden Zeller",
+    siteName: "Hayden Zeller",
+    description: "Hayden Zeller - Student - Developer - Creator - Problem Solver",
+    images: [
+      {
+        url: "https://haydenzeller.com/icon.svg",
+        width: 1200,
+        height: 630,
+        alt: "Hayden Zeller Logo",
+      },
+    ],
+  },
+};
+
 
 export default function Home() {
   return (

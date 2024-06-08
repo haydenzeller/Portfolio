@@ -3,6 +3,35 @@ import React from "react";
 import { Navigation } from "@/app/components/Nav";
 import { Card } from "@/app/components/Card";
 import Particles from "../components/Particles";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects - Hayden Zeller",
+  description: "Some of the projects are from work and some are on my own time.",
+  keywords: ["Projects", "Hayden Zeller Projects", "Hayden Zeller Work", "Hayden Zeller Personal Projects", "Hayden Zeller Projects Work Personal"],
+  alternates: {
+    canonical: "https://haydenzeller.com/projects",
+  },
+  twitter: {
+    card: "summary",
+    site: "@haydenzeller",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://haydenzeller.com/projects",
+    title: "Projects - Hayden Zeller",
+    siteName: "Hayden Zeller",
+    description: "Some of the projects are from work and some are on my own time.",
+    images: [
+      {
+        url: "https://haydenzeller.com/icon.svg",
+        width: 1200,
+        height: 630,
+        alt: "Hayden Zeller Logo",
+      },
+    ],
+  },
+};
 
 
 export default function Projects() {

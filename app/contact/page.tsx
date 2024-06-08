@@ -8,10 +8,46 @@ import githubLogo from "@/public/github.png";
 import xLogo from "@/public/x.png";
 import mailLogo from "@/public/mail.png";
 import Particles from "../components/Particles";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Contact - Hayden Zeller",
+	description: "Contact Hayden Zeller - Student - Developer - Creator - Problem Solver",
+	keywords: [
+		"Contact",
+		"Hayden Zeller Contact",
+		"Hayden Zeller Email",
+		"Hayden Zeller X",
+		"Hayden Zeller GitHub",
+		"Hayden Zeller Contact Email X GitHub",
+	],
+	alternates: {
+		canonical: "https://haydenzeller.com/contact",
+	},
+	twitter: {
+		card: "summary",
+		site: "@haydenzeller",
+	},
+	openGraph: {
+		type: "website",
+		url: "https://haydenzeller.com/contact",
+		title: "Contact - Hayden Zeller",
+		siteName: "Hayden Zeller",
+		description: "Contact Hayden Zeller - Student - Developer - Creator - Problem Solver",
+		images: [
+			{
+				url: "https://haydenzeller.com/icon.svg",
+				width: 1200,
+				height: 630,
+				alt: "Hayden Zeller Logo",
+			},
+		],
+	},
+};
 
 
 
-export default function Example() {
+export default function Contact() {
 	return (
 		<div className=" bg-gradient-to-tl from-transparent to-black">
 			<Navigation />
