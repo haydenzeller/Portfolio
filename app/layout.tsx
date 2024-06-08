@@ -12,7 +12,8 @@ const Kanit = GoogleKanit({
 
 export const viewport: Viewport = {
   initialScale: 1.0,
-  viewportFit: "cover",
+  width: "device-width",
+  height: "device-height",
   themeColor:"#000000",
 };
 
