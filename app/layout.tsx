@@ -1,33 +1,31 @@
-import { Kanit as GoogleKanit } from "next/font/google"; // Renamed Asap to GoogleAsap to avoid conflict
+import { Kanit as GoogleKanit } from "next/font/google";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
-
-
-const Kanit = GoogleKanit({ 
+const Kanit = GoogleKanit({
   weight: '500',
-  subsets: ["latin"] 
+  subsets: ["latin"],
 });
-
 
 export const viewport: Viewport = {
   initialScale: 1.0,
   width: "device-width",
   height: "device-height",
-  themeColor:"#000000",
+  themeColor: "#000000",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <head>
-      </head>
+      <head />
       <body className={Kanit.className}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
