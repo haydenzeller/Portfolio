@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import { Navigation } from "@/app/components/Nav";
 import { Card } from "@/app/components/Card";
