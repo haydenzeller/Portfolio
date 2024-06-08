@@ -50,7 +50,7 @@ export default function Contact() {
 	return (
 		<div className=" bg-gradient-to-tl from-transparent to-black min-h-screen overflow-hidden">
 			<Particles
-				className="absolute inset-0 -z-1 bg-black"
+				className="absolute inset-0 -z-1 bg-black min-h-screen overflow-hidden"
 				quantity={400}
 			/>
 			<Navigation />

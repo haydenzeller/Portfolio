@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <div className="min-h-screen overflow-hidden">
-        <Particles className="absolute inset-0 -z-1 bg-black" quantity={400} />
+        <Particles className="absolute inset-0 -z-1 bg-black min-h-screen overflow-hidden" quantity={400} />
         <div className="relative pb-16 bg-transparent min-h-screen z-10">
         <Navigation />
             <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
