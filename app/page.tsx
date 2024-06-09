@@ -43,6 +43,11 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link href="/blog" className="text-zinc-300 hover:text-zinc-100">
+              Blog
+            </Link>
+          </li>
+          <li>
             <Link href="/contact" className="text-zinc-300 hover:text-zinc-100">
               Contact
             </Link>

@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@directus/sdk": "^16.1.0",
     "@tailwindcss/typography": "^0.5.13",
     "next": "15.0.0-rc.0",
     "next-sitemap": "^4.2.3",

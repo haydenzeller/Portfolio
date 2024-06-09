@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import arrow from "@/public/arrow.svg";
 
-export const Navigation: React.FC = () => {
+export default function Navigation({ backPath }: { backPath: string }) {
   const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
 
@@ -36,15 +36,20 @@ export const Navigation: React.FC = () => {
               Projects
             </Link>
             <Link
+              href="/blog"
+              className="duration-200 text-zinc-400 hover:text-zinc-100"
+            >
+              Blog
+            </Link>
+            <Link
               href="/contact"
               className="duration-200 text-zinc-400 hover:text-zinc-100"
             >
               Contact
             </Link>
           </div>
-
           <Link
-            href="/"
+            href={backPath}
             className="duration-200 text-zinc-300 hover:text-zinc-100"
           >
             <Image
