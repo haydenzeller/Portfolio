@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Navigation } from "@/app/components/Nav";
+import Navigation from "@/app/components/Nav";
 import { Card } from "@/app/components/Card";
 import Image from "next/image";
 import githubLogo from "@/public/github.png";
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <div className="bg-gradient-to-tl from-transparent to-black min-h-screen overflow-hidden">
-      <Navigation />
+      <Navigation backPath="/"/>
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
         <Particles className="absolute inset-0 -z-1 bg-black min-h-screen overflow-hidden" quantity={400} />
         <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
