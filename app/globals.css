@@ -4,9 +4,15 @@
 
 @layer base {
   .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   }
-} 
+
+  .text-glow {
+    text-shadow: 0 0 5px rgba(186, 85, 211, 0.7),
+                 0 0 10px rgba(186, 85, 211, 0.5),
+                 0 0 15px rgba(186, 85, 211, 0.3);
+  }
+}
 
 html {
   font-family: "Kanit", monospace;

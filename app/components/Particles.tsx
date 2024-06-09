@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef, useEffect } from "react";
 import { useMousePosition } from "@/util/mouse";
 
@@ -234,7 +235,7 @@ export default function Particles({
   };
 
   return (
-    <div className={className} ref={canvasContainerRef} aria-hidden="true">
+    <div className={`${className} absolute inset-0`} ref={canvasContainerRef} aria-hidden="true">
       <canvas ref={canvasRef} />
     </div>
   );
