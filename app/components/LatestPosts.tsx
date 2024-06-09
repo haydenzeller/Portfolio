@@ -36,24 +36,23 @@ export default function LatestPosts() {
         <div className="">
             {posts.length > 0 ? posts.map((post: Post, index: number) => (
                 <Card key={index}>
-                    <article className="relative w-full h-full p-4 md:p-8">
-                        <div className="flex flex-row gap-1">
-                            {post.tags.map((tag, index) => (
-                                <div key={index} className="text-xs text-zinc-100 badge bg-purple-900">
-                                    {tag}
-                                </div>
-                            ))}
-                        </div>
-                        <h2 id={`post-${post.id}`} className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
-                            {post.title}
-                        </h2>
-                        <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                            {post.body.length > 200 ? post.body.substring(0, 200) + '...' : post.body}
-                        </p>
-                        <Link href={`/blog/${post.title}`} className="mt-4 text-purple-900 underline group-hover:text-purple-800">
-                            Read more
-                        </Link>
-                    </article>
+                    <Link href={`/blog/${post.title}`}>
+                        <article className="relative w-full h-full p-4 md:p-8">
+                            <div className="flex flex-row gap-1">
+                                {post.tags.map((tag, index) => (
+                                    <div key={index} className="text-xs text-zinc-100 badge">
+                                        {tag}
+                                    </div>
+                                ))}
+                            </div>
+                            <h2 id={`post-${post.id}`} className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
+                                {post.title}
+                            </h2>
+                            <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                                {post.body.length > 200 ? post.body.substring(0, 200) + '...' : post.body}
+                            </p>
+                        </article>
+                    </Link>
                 </Card>
             )) : (
                 <div className="flex flex-col justify-center items-center">
