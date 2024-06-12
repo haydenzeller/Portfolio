@@ -10,6 +10,7 @@ export interface Post {
     body: string;
     tags: string[];
     date_created: string;
+    slug:string;
 }
 
 type Params = {
@@ -19,6 +20,7 @@ type Params = {
 const copyToClipboard = (content: string) => {
     navigator.clipboard.writeText(content);
 }
+
 
 export default function PostContent({ params }: { params: Params }) {
     const [post, setPost] = useState<Post | null>(null);

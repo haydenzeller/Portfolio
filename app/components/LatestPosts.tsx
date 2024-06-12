@@ -8,6 +8,8 @@ export interface Post {
     title: string;
     body: string;
     tags: string[];
+    slug:string;
+    date_time: string;
 }
 export default function LatestPosts() {
     const [posts, setPosts] = useState([]);
@@ -36,7 +38,7 @@ export default function LatestPosts() {
         <div className="">
             {posts.length > 0 ? posts.map((post: Post, index: number) => (
                 <Card key={index}>
-                    <Link href={`/blog/${post.title}`}>
+                    <Link href={`/blog/${post.slug}`}>
                         <article className="relative w-full h-full p-4 md:p-8">
                             <div className="flex flex-row gap-1">
                                 {post.tags.map((tag, index) => (

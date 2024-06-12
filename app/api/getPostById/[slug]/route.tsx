@@ -10,7 +10,7 @@ export async function GET(context: NextRequest, {params}: {params: Params}) {
     try {
         const data = await client.request(readItems('posts', {
             filter: {
-                title: params.slug,
+                slug: params.slug,
             },
         }));
             
